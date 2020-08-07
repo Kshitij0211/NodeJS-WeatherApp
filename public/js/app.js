@@ -1,5 +1,3 @@
-console.log('ClientSide JS Loaded')
-
 const weatherForm = document.querySelector('form')
 const searchValue = document.querySelector('input')
 const title = document.querySelector('.title')
