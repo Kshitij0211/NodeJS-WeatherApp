@@ -4,6 +4,7 @@ const express = require('express')
 const weatherForecast = require('./utils/weatherForecast')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //Paths for expressConfig
 const publicDirPath = path.join(__dirname, '../public')
@@ -85,6 +86,6 @@ app.get('*', (request, response) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log("Server Initiated at port no. 3000!")
+app.listen(port, () => {
+    console.log("Server Initiated at port no." + port + "!")
 })
