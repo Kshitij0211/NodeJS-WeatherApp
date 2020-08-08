@@ -1,23 +1,45 @@
 body {
-    color: #333333;
+    color: #dddddd;
     font-family: arial;
-    max-width: 650px;
-    margin: 0 auto;
+    text-align: center;
     padding: 0 16px;
-    display: flex;
+    overflow: hidden;
     flex-direction: column;
-    min-height: 100vh
+    min-height: 100vh!important;
+}
+
+#msg3 {
+    text-transform: capitalize;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .main-content {
+    position: relative;
+    z-index: 999;
     flex-grow: 1;
+    width: 700px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 footer {
-    color: #888888;
-    border-top: 1px solid #eeeeee;
+    color: #dddddd;
     margin-top: 16px;
     padding: 16px 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
 }
 
 header {
@@ -37,7 +59,10 @@ header a {
 }
 
 .portrait {
-    width: 250px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.8);
 }
 
 input {
@@ -57,13 +82,14 @@ button {
     margin-right: 40px;
     padding: 10px 30px;
     text-decoration: none;
-    color: #333333;
+    color: #dddddd;
     border-radius: 50px;
-    border: 1px solid #333333;
+    border: 1px solid #ffffff;
 }
 
 .firstDiv a:hover {
     transition: 0.3s;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(117 255 40 / 60%);
     color: #fff;
+    border: 1px solid #000;
 }
