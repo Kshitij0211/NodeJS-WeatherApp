@@ -16,8 +16,8 @@ const weatherForecast = (address, callback) => {
             else {
 
                 const data = {
-                    forecast: "It is  at " + body.name + ", " + body.sys.country +
-                        ". Current temperature is " + body.main.temp + "°C. Feels like " + body.main.feels_like +
+                    forecast: "It is " + body.main.temp + "°C at " + body.name + ", " + body.sys.country +
+                        ". Feels like " + body.main.feels_like +
                         "°C. Humidity is " + body.main.humidity + "% with wind speed of " + body.wind.speed + " kmph",
                     bg: body.weather[0].main.toLowerCase()
                 }
